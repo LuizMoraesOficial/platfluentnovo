@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --workspace frontend run build)",
+      "Bash(where 7z)",
+      "Bash(where 7za)"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "be-fluent-school",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm --workspace backend run dev",
+    "dev:frontend": "npm --workspace frontend run dev",
+    "dev": "npm run dev:backend",
+    "start:dev": "node backend/scripts/start-dev.js",
+    "build:frontend": "npm --workspace frontend run build",
+    "start": "npm --workspace backend run start",
+    "db:migrate": "npm --workspace backend run db:migrate",
+    "db:push": "npm --workspace backend run db:push",
+    "db:studio": "npm --workspace backend run db:studio",
+    "db:generate": "npm --workspace backend run db:generate"
+  }
+}
